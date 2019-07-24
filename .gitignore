@@ -35,10 +35,10 @@ uploads/
 !README.md
 
 plugins/*
-!plugins/inhabitent-functionality
+!plugins/quotes-functionality
 
 themes/*
-!themes/Inhabitent_Projekt
-themes/Inhabitent_Projekt/node_modules/
+!themes/quotesondev
+themes/quotesondev/node_modules/
 
 uploads/wp-migrate-db
