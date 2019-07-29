@@ -1,3 +1,15 @@
 body {
   background-color: $color__main-background-color;
+  font-family: 'exo';
+  color: #fff;
+  a {
+    color: #00cc00;
+    text-decoration: none;
+  }
+}
+.container {
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 2.5%;
+  width: 100%;
 }

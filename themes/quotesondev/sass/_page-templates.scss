@@ -1,7 +1,32 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.site-content {
+  @include desktop {
+    margin: 4.5rem 175px 1.5rem;
+    position: relative;
+  }
+  top: 0;
+  &:before,
+  &:after {
+    color: #0c0;
+    font-family: 'FontAwesome';
 
+    font-size: 125px;
+    line-height: 125px;
+    position: absolute;
+    top: 0;
+  }
+
+  &:before {
+    content: '\f10d';
+    left: -175px;
+  }
+  &:after {
+    content: '\f10e';
+    right: -175px;
+  }
+}
 /* All Archives Page */
 
 /* Submit a Quote Page */

@@ -1,4 +1,18 @@
-.logo {
-  width: 700px;
-  margin: 0 auto;
+.site-header {
+  margin-top: 3rem;
+
+  .logo {
+    img {
+      display: block;
+      width: 300px;
+      @include tablet {
+        width: 500px;
+        margin: 0 auto;
+      }
+      @include desktop {
+        width: 700px;
+        margin: 0 auto;
+      }
+    }
+  }
 }
