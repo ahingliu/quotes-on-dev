@@ -1,0 +1,23 @@
+.page-id-212 {
+  .authors,
+  .categories,
+  .tags {
+    ul {
+      list-style: disc;
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      font-size: 1.25rem;
+      padding: 0;
+    }
+
+    a {
+      margin-right: 1.5rem;
+    }
+  }
+  .entry-header {
+    h1 {
+      margin: -18px 0;
+    }
+  }
+}

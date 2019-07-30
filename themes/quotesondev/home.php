@@ -10,14 +10,17 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
-
+			<?php $args = array(
+				'posts_per_page' => 1,
+				'orderby' => 'rand'
+			);
+			?>
 			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+			<?php query_posts($args); if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content-home' ); ?>
 				<button type="button" id="another" class="get-quotes">Show me another</button>
-
+				<button type="submit"  onClick="refreshPage()">Refresh Button</button>
 			<?php endwhile; ?>
 			<?php else : ?>
 
@@ -29,3 +32,9 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
+
+<script>
+function refreshPage(){
+    window.location.reload();
+} 
+</script>

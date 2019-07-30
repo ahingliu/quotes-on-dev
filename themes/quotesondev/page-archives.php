@@ -12,11 +12,11 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+				<?php get_template_part( 'template-parts/content-page-archives' ); ?>
 
 			<?php endwhile; // End of the loop. ?>
-
+			<?php get_footer(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_footer(); ?>
+

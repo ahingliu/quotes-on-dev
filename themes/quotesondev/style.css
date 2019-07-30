@@ -300,70 +300,7 @@ mark, ins {
 big {
   font-size: 125%; }
 
-/*--------------------------------------------------------------
-# Elements
---------------------------------------------------------------*/
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-size: 1rem; }
-
-*,
-*:before,
-*:after {
-  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit; }
-
-body {
-  background: #fff;
-  /* Fallback for when there is no custom background color defined. */ }
-
-blockquote,
-q {
-  quotes: '' ''; }
-  blockquote:before, blockquote:after,
-  q:before,
-  q:after {
-    content: ''; }
-
-hr {
-  background-color: #ccc;
-  border: 0;
-  height: 1px;
-  margin-bottom: 1.5rem; }
-
-ul,
-ol {
-  margin: 0 0 1.5rem 3rem; }
-
-ul {
-  list-style: disc; }
-
-ol {
-  list-style: decimal; }
-
-li > ul,
-li > ol {
-  margin-bottom: 0;
-  margin-left: 1.5rem; }
-
-dt {
-  font-weight: bold; }
-
-dd {
-  margin: 0 1.5rem 1.5rem; }
-
-img {
-  height: auto;
-  /* Make sure images are scaled correctly. */
-  max-width: 100%;
-  /* Adhere to container width. */ }
-
-table {
-  margin: 0 0 1.5rem;
-  width: 100%; }
-
+/* @import 'elements'; */
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -696,3 +633,24 @@ body {
 
 .page-id-210 .entry-title a {
   display: none; }
+
+.page-id-212 .authors ul,
+.page-id-212 .categories ul,
+.page-id-212 .tags ul {
+  list-style: disc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  font-size: 1.25rem;
+  padding: 0; }
+
+.page-id-212 .authors a,
+.page-id-212 .categories a,
+.page-id-212 .tags a {
+  margin-right: 1.5rem; }
+
+.page-id-212 .entry-header h1 {
+  margin: -18px 0; }

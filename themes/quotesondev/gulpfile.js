@@ -64,7 +64,7 @@ gulp.task('browser-sync', function() {
   ];
 
   browserSync.init(files, {
-    proxy: 'localhost/quotes'
+    proxy: 'http://localhost/quotes'
   });
 
   gulp.watch(files).on('change', browserSync.reload);
