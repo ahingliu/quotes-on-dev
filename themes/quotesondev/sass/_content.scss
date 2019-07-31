@@ -25,9 +25,24 @@
 .entry-content,
 .entry-summary {
 	margin: $base__space-unit 0 0;
+	p{
+		font-size: 2.5rem;
+	}
 }
 
 .page-links {
 	clear: both;
 	margin: 0 0 $base__space-unit;
 }
+
+.entry-title {
+	font-size: 1.25rem;
+	font-weight: 400;
+}
+
+@include desktop {
+	.site-content {
+		margin: 4.5rem 175px 1.5rem;
+		position: relative;
+	}
+  }

@@ -29,4 +29,24 @@
 }
 /* All Archives Page */
 
+.nav-links {
+  span, a{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+}
+
 /* Submit a Quote Page */
+
+/* Home button */
+#another {
+  display: flex;
+  margin: 0 auto;
+}
+
+.entry-content-after {
+	p{
+		font-size: 2.5rem;
+	}
+}

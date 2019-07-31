@@ -19,8 +19,8 @@ get_header(); ?>
 			<?php query_posts($args); if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content-home' ); ?>
-				<button type="button" id="another" class="get-quotes">Show me another</button>
-				<button type="submit"  onClick="refreshPage()">Refresh Button</button>
+				<button type="button" class="anotherone" id="another">Show Me Another</button>
+			
 			<?php endwhile; ?>
 			<?php else : ?>
 
@@ -33,8 +33,3 @@ get_header(); ?>
 
 <?php get_footer(); ?>
 
-<script>
-function refreshPage(){
-    window.location.reload();
-} 
-</script>

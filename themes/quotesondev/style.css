@@ -309,24 +309,21 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
+  border-color: #0c0;
+  color: #0c0;
+  font-size: 1.25rem;
+  background-color: #222;
+  border: 2px solid #0c0;
   border-radius: 3px;
-  background: #e6e6e6;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
-  font-size: .75rem;
+  font-weight: 700;
   line-height: 1;
-  padding: .6rem 1rem .4rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+  padding: .75rem 2.25rem;
+  font-family: 'exo'; }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa;
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
+    color: #090; }
   button:active, button:focus,
   input[type="button"]:active,
   input[type="button"]:focus,
@@ -334,9 +331,7 @@ input[type="submit"] {
   input[type="reset"]:focus,
   input[type="submit"]:active,
   input[type="submit"]:focus {
-    border-color: #aaa #bbb #bbb;
-    -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
-            box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
+    color: #0c0; }
 
 /* Fields */
 input[type="text"],
@@ -527,10 +522,18 @@ a {
 .entry-content,
 .entry-summary {
   margin: 1.5rem 0 0; }
+  .page-content p,
+  .entry-content p,
+  .entry-summary p {
+    font-size: 2.5rem; }
 
 .page-links {
   clear: both;
   margin: 0 0 1.5rem; }
+
+.entry-title {
+  font-size: 1.25rem;
+  font-weight: 400; }
 
 /*--------------------------------------------------------------
 # Media
@@ -573,7 +576,21 @@ object {
     right: -175px; }
 
 /* All Archives Page */
+.nav-links span, .nav-links a {
+  margin-left: 5px;
+  margin-right: 5px; }
+
 /* Submit a Quote Page */
+/* Home button */
+#another {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto; }
+
+.entry-content-after p {
+  font-size: 2.5rem; }
+
 body {
   background-color: #222222;
   font-family: 'exo';
