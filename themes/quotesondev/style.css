@@ -605,6 +605,19 @@ object {
 .page-content p {
   font-size: 1rem; }
 
+.single .entry-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .single .entry-title .source {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 12px;
+    margin-left: 5px; }
+  .single .entry-title a {
+    margin-top: 10px; }
+
 body {
   background-color: #222222;
   font-family: 'exo';
