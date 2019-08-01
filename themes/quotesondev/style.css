@@ -300,6 +300,9 @@ mark, ins {
 big {
   font-size: 125%; }
 
+article p {
+  font-size: 2.5rem; }
+
 /* @import 'elements'; */
 /*--------------------------------------------------------------
 # Forms
@@ -535,6 +538,11 @@ a {
   font-size: 1.25rem;
   font-weight: 400; }
 
+@media (min-width: 1080px) {
+  .site-content {
+    margin: 4.5rem 175px 1.5rem;
+    position: relative; } }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -591,6 +599,12 @@ object {
 .entry-content-after p {
   font-size: 2.5rem; }
 
+.content-area .error-404 .page-header {
+  font-weight: bold; }
+
+.page-content p {
+  font-size: 1rem; }
+
 body {
   background-color: #222222;
   font-family: 'exo';
@@ -626,6 +640,8 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 4.5rem 0 3rem; }
+  .site-footer .site-info .pfooter p {
+    font-size: 1rem; }
   .site-footer .site-info p {
     line-height: 1;
     margin-left: 1rem; }
@@ -671,3 +687,76 @@ body {
 
 .page-id-212 .entry-header h1 {
   margin: -18px 0; }
+
+.page-id-214 .entry-header h1 {
+  font-size: 2rem;
+  font-weight: 900; }
+
+.page-id-214 .site-footer .site-info {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.page-id-214 #submit {
+  margin-top: 25px; }
+
+.page-id-214 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .page-id-214 div label {
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  .page-id-214 div input {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 45%; }
+  .page-id-214 div textarea {
+    width: 85%; }
+
+.page-id-214 input[type="text"],
+.page-id-214 input[type="email"],
+.page-id-214 input[type="url"],
+.page-id-214 input[type="password"],
+.page-id-214 input[type="search"],
+.page-id-214 textarea {
+  border-color: #0c0;
+  color: #0c0;
+  font-size: 1.25rem;
+  background-color: #222;
+  border: 2px solid #0c0;
+  border-radius: 3px;
+  font-weight: 700;
+  line-height: 1;
+  padding: .75rem 2.25rem;
+  font-family: 'exo'; }
+  .page-id-214 input[type="text"]:hover,
+  .page-id-214 input[type="email"]:hover,
+  .page-id-214 input[type="url"]:hover,
+  .page-id-214 input[type="password"]:hover,
+  .page-id-214 input[type="search"]:hover,
+  .page-id-214 textarea:hover {
+    color: #090; }
+  .page-id-214 input[type="text"]:active, .page-id-214 input[type="text"]:focus,
+  .page-id-214 input[type="email"]:active,
+  .page-id-214 input[type="email"]:focus,
+  .page-id-214 input[type="url"]:active,
+  .page-id-214 input[type="url"]:focus,
+  .page-id-214 input[type="password"]:active,
+  .page-id-214 input[type="password"]:focus,
+  .page-id-214 input[type="search"]:active,
+  .page-id-214 input[type="search"]:focus,
+  .page-id-214 textarea:active,
+  .page-id-214 textarea:focus {
+    color: #0c0; }
+
+.page-id-214 #submit {
+  width: 28%; }
+
+.page-id-214 .quote-sub-form-section {
+  margin-top: -40px; }

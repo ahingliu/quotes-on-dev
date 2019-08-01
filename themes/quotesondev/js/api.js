@@ -25,17 +25,14 @@ jQuery(document).ready(() => {
         for (let i = 0; i < response.length; i++) {
           jQuery('article').empty().append(
             `
-            <p class="entry-content-after">${response[i].content.rendered}</p>
+            <p>${response[i].content.rendered}</p>
             <h3> - ${response[i].title.rendered},
             <a href="${response[i]._qod_quote_source_url}"> ${response[i]._qod_quote_source}</a></h3>
            `);
         }
       });
   });
-  var lastPage = '';
-  $(window).on('popstate', function () {
-    window.location.replace(lastPage);
-  })
+
 });
 
 

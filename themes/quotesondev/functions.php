@@ -64,6 +64,8 @@ function qod_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'qod_scripts' );
 
+
+
 /**
  * Custom functions that act independently of the theme templates.
  */
@@ -109,4 +111,5 @@ function custom_load_font_awesome() {
     wp_enqueue_style( 'font-awesome-free', '//use.fontawesome.com/releases/v5.2.0/css/all.css' );
 
 }
+
 

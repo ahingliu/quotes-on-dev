@@ -15,7 +15,7 @@
                     <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
                     <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
                 </nav><!-- #site-navigation -->
-				<p>Brought to you by <a href="https://github.com/ahingliu/quotes-on-dev">Alex Hing Liu</a></p>	
+				<p class="pfooter">Brought to you by <a href="https://github.com/ahingliu/quotes-on-dev">Alex Hing Liu</a></p>	
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
