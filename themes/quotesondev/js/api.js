@@ -23,9 +23,12 @@ jQuery(document).ready(() => {
           jQuery('article').empty().append(
             `
             <p>${response[i].content.rendered}</p>
-            <h3> - ${response[i].title.rendered},
+            <h3> - ${response[i].title.rendered}
+            ${response[i]._qod_quote_source_url &&
+            `,
             <a href="${response[i]._qod_quote_source_url}"> ${response[i]._qod_quote_source}</a></h3>
-           `);
+           `}`
+          );
         }
       });
   });
