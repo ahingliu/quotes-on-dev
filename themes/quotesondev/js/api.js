@@ -1,6 +1,3 @@
-
-
-
 jQuery(document).ready(() => {
   jQuery('#another').on('click', function (event) {
     event.preventDefault();
@@ -32,11 +29,48 @@ jQuery(document).ready(() => {
         }
       });
   });
-
 });
 
+jQuery('#submit').on('click', function (event) {
+  event.preventDefault();
 
 
+  let title = jQuery('#author-quote').val();
+  let content = jQuery('#content-quote').val();
+  let source = jQuery('#quote-source').val();
+  let sourceURL = jQuery('#quote-source-url').val();
+
+  let arrayjson = {
+
+    'title': title,
+    'content': content,
+    'source': source,
+    'source_url': sourceURL,
+    'status': 'pending'
+  };
+
+  let postUrl = red_vars.rest_url + 'wp/v2/posts/';
+
+  jQuery
+    .ajax({
+      method: 'POST',
+      cache: false,
+      url: postUrl,
+      dataType: 'json',
+      data: arrayjson,
+      beforeSend: function (xhr) {
+        xhr.setRequestHeader('X-WP-Nonce', red_vars.wpapi_nonce);
+      }
+    }).done(function () {
+      jQuery('#sub-quote-form').hide();
+      jQuery('.entry-header').hide();
+      jQuery('.quote-sub-form-section').append('<h1> Thank you for your submission!</h1>');
+    }).fail(function () {
+      jQuery('#sub-quote-form').hide();
+      jQuery('.entry-header').hide();
+      jQuery('.quote-sub-form-section').append('<h1> Ops, something!</h1>');
+    })
+});
 
 
 

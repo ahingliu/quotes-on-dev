@@ -93,16 +93,16 @@ function red_scripts() {
 	$script_url = get_template_directory_uri() . '/scripts.js';
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'red_comments', $script_url, array( 'jquery' ), false, true );
-   wp_localize_script( 'red_comments', 'red_vars', array(
+   	wp_localize_script( 'red_comments', 'red_vars', array(
 	   'rest_url' => esc_url_raw( rest_url() ),
 	   'wpapi_nonce' => wp_create_nonce( 'wp_rest' ),
 	   'post_id' => get_the_ID()
    ) );
 	wp_enqueue_script( 'ajax-request', get_template_directory_uri() . '/build/js/api.min.js', array(), '20151215', true );
  }
- add_action( 'wp_enqueue_scripts', 'red_scripts' );
+	add_action( 'wp_enqueue_scripts', 'red_scripts' );
 
- add_action( 'wp_enqueue_scripts', 'custom_load_font_awesome' );
+	add_action( 'wp_enqueue_scripts', 'custom_load_font_awesome' );
 /**
  * Enqueue Font Awesome.
  */
