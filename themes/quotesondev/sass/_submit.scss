@@ -66,10 +66,40 @@
         }
 
         #submit{
-            width: 28%;
+            width: 49%;
+            
+            @include tablet {
+                min-width: 35%;
+                max-width: 28%;
+                
+              }
+              @include desktop {
+                width: 28%
+                
+              }
         }
         
         .quote-sub-form-section{
             margin-top: -40px;
         }
+
+        .site-header {
+           
+          
+            .logo {
+              img {
+                
+                
+                @include tablet {
+                  margin-left:10px; 
+                  
+                }
+                @include desktop {
+                  margin: 0 auto;
+                  
+                }
+              }
+              
+            }
+          }
     }

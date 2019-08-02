@@ -18,6 +18,33 @@
   .entry-header {
     h1 {
       margin: -18px 0;
+      margin-bottom: 36px;
     }
   }
+  .entry-title{
+    font-size: 2rem;
+    
+  }
+
+  .site-header {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  
+    .logo {
+      img {
+        
+        
+        @include tablet {
+          margin-left:10px; 
+          
+        }
+        @include desktop {
+          margin: 0 auto;
+          
+        }
+      }
+      
+    }
+  }
+  
 }

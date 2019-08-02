@@ -32,7 +32,7 @@ $source_url = get_post_meta( get_the_ID(), '_qod_quote_source_url', true );
 			<?php else : ?>
 				<span class="source"></span>
 			<?php endif; ?>
-	</div><!-- .entry-title -->
+			</div><!-- .entry-title -->
 		
 	
 </article><!-- #post-## -->

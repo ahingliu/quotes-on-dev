@@ -1,6 +1,9 @@
 .site-header {
   margin-top: 3rem;
-
+  margin-bottom: 3rem;
+  @include tablet {
+    margin-bottom: 2rem;
+  }
   .logo {
     img {
       display: block;
@@ -8,10 +11,12 @@
       @include tablet {
         width: 500px;
         margin: 0 auto;
+        
       }
       @include desktop {
         width: 700px;
         margin: 0 auto;
+        
       }
     }
   }
