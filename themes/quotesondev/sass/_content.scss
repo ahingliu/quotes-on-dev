@@ -73,3 +73,31 @@
 		width: 100%
 	}
 }
+
+.archive .hentry{
+
+	border-bottom: $border__dash;
+	
+	p{
+		margin-bottom: 2rem;
+		
+	}
+	h2{
+		margin-bottom: 3rem;
+		font-weight: 400;
+		
+	}
+}
+
+.archive .page-header{
+	margin-top: 2rem;
+	h1{
+		border-bottom: $border__dash;
+		margin-bottom: 3rem;
+}
+}
+.archive .page-title{
+	
+		padding-bottom: 1.5rem;
+	
+}

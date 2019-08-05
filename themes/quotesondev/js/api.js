@@ -1,4 +1,6 @@
 jQuery(document).ready(() => {
+
+
   jQuery('#another').on('click', function (event) {
     event.preventDefault();
 
@@ -32,7 +34,10 @@ jQuery(document).ready(() => {
         }
       });
   });
+
 });
+
+
 
 jQuery('#submit').on('click', function (event) {
   event.preventDefault();
@@ -71,7 +76,7 @@ jQuery('#submit').on('click', function (event) {
     }).fail(function () {
       jQuery('#sub-quote-form').hide();
       jQuery('.entry-header').hide();
-      jQuery('.quote-sub-form-section').append('<h1> Ops, something!</h1>');
+      jQuery('.quote-sub-form-section').append('<h1> Ops, something went wrong!</h1>');
     })
 });
 
