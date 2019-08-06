@@ -66,3 +66,4 @@
 
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
+<?php get_footer(); ?>

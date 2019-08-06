@@ -72,11 +72,11 @@ jQuery('#submit').on('click', function (event) {
     }).done(function () {
       jQuery('#sub-quote-form').hide();
       jQuery('.entry-header').hide();
-      jQuery('.quote-sub-form-section').append('<h1> Thank you for your submission!</h1>');
+      jQuery('.quote-sub-form-section').append('<div class="sub-result"><h1>Thank you for your submission!</h1></div>');
     }).fail(function () {
       jQuery('#sub-quote-form').hide();
       jQuery('.entry-header').hide();
-      jQuery('.quote-sub-form-section').append('<h1> Ops, something went wrong!</h1>');
+      jQuery('.quote-sub-form-section').append('<h1>Ops, something went wrong!</h1>');
     })
 });
 

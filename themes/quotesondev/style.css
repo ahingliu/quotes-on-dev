@@ -346,25 +346,49 @@ textarea {
   color: #fff;
   border: 2px solid #0c0;
   border-radius: 3px;
-  background-color: #222222; }
+  background-color: #222222;
+  font-size: 1rem;
+  font-weight: 100; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
   input[type="password"]:focus,
   input[type="search"]:focus,
   textarea:focus {
-    color: #111; }
+    border-color: #fcfcd2; }
+  @media (min-width: 620px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    input[type="password"],
+    input[type="search"],
+    textarea {
+      font-size: 1.25rem; } }
 
 input[type="text"],
 input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-  padding: 3px; }
+  padding: .25rem .5rem;
+  font-family: 'exo'; }
 
 textarea {
   padding-left: 3px;
   width: 100%; }
+
+.search-field {
+  width: 240px; }
+
+.search-submit {
+  border: 0;
+  margin: 0;
+  padding-left: 8px; }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -656,6 +680,14 @@ object {
   .single .entry-title a {
     margin-top: 10px; }
 
+.page-title-search {
+  border-bottom: 1px dotted #fff;
+  margin-top: 3rem;
+  padding-bottom: 1.5rem; }
+
+.entry-summary-search p {
+  font-size: 1rem; }
+
 body {
   background-color: #222222;
   font-family: 'exo';
@@ -681,8 +713,7 @@ body {
     width: 300px; }
     @media (min-width: 620px) {
       .site-header .logo img {
-        width: 500px;
-        margin: 0 auto; } }
+        width: 500px; } }
     @media (min-width: 1080px) {
       .site-header .logo img {
         width: 700px;
@@ -715,11 +746,21 @@ body {
   .site-footer .footer-navigation ul li {
     list-style: none;
     padding: 0 1rem;
-    border-right: 1px solid #fff;
     line-height: 1;
     padding: 0 1rem; }
+  .site-footer .footer-navigation ul li.page_item:nth-child(1), .site-footer .footer-navigation ul li.page_item:nth-child(2) {
+    border-right: 1px solid #fff; }
+  @media (min-width: 620px) {
+    .site-footer .footer-navigation ul li {
+      border-right: 1px solid #fff; } }
+  @media (min-width: 1080px) {
+    .site-footer .footer-navigation ul li {
+      border-right: 1px solid #fff; } }
 
 .page-id-210 .entry-title a {
+  display: none; }
+
+.page-id-210 .entry-header {
   display: none; }
 
 .page-id-212 .authors ul,
@@ -795,7 +836,7 @@ body {
 .page-id-214 input[type="search"],
 .page-id-214 textarea {
   border-color: #0c0;
-  color: #0c0;
+  color: #fff;
   font-size: 1.25rem;
   background-color: #222;
   border: 2px solid #0c0;
@@ -810,7 +851,7 @@ body {
   .page-id-214 input[type="password"]:hover,
   .page-id-214 input[type="search"]:hover,
   .page-id-214 textarea:hover {
-    color: #090; }
+    border: 2px solid #fff; }
   .page-id-214 input[type="text"]:active, .page-id-214 input[type="text"]:focus,
   .page-id-214 input[type="email"]:active,
   .page-id-214 input[type="email"]:focus,
@@ -822,7 +863,7 @@ body {
   .page-id-214 input[type="search"]:focus,
   .page-id-214 textarea:active,
   .page-id-214 textarea:focus {
-    color: #0c0; }
+    color: #fff; }
 
 .page-id-214 #submit {
   width: 49%; }
@@ -844,3 +885,12 @@ body {
 @media (min-width: 1080px) {
   .page-id-214 .site-header .logo img {
     margin: 0 auto; } }
+
+.page-id-214 .quote-sub-form-section {
+  margin-top: 20px; }
+  @media (min-width: 1080px) {
+    .page-id-214 .quote-sub-form-section {
+      margin-top: -38px;
+      /* text-align: center;
+                margin-top: 0px;
+                margin-left: -14px; */ } }

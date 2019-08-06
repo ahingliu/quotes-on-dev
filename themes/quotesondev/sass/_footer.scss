@@ -27,10 +27,26 @@
       li {
         list-style: none;
         padding: 0 1rem;
-        border-right: 1px solid #fff;
         line-height: 1;
         padding: 0 1rem;
       }
+
+      li.page_item:nth-child(1), li.page_item:nth-child(2) {
+        border-right: 1px solid #fff;
+      }
+      
+      @include tablet {
+        li{
+          border-right: 1px solid #fff;
+        }
+        
+        }
+      @include desktop {
+        li{
+          border-right: 1px solid #fff;
+        }
+        }
+      }
     }
   }
-}
+

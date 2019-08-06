@@ -55,6 +55,8 @@
 
 .content-area{
   .error-404{
+    
+
     .page-header{
       font-weight: bold;
      
@@ -84,3 +86,18 @@
     }
   }
 }
+
+// Search
+
+.page-title-search {
+  border-bottom:1px dotted #fff;
+  margin-top: 3rem;
+  padding-bottom: 1.5rem;
+ 
+  }
+  .entry-summary-search{
+  p{
+    font-size: 1rem;
+  }
+}
+

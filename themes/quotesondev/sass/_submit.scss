@@ -46,7 +46,7 @@
         input[type="search"],
         textarea {
             border-color: #0c0;
-            color: #0c0;
+            color: #fff;
             font-size: 1.25rem;
             background-color: #222;
             border: 2px solid #0c0;
@@ -56,12 +56,12 @@
             padding: .75rem 2.25rem;
             font-family: 'exo';
             &:hover {
-                color: #090;
+                border: 2px solid #fff;
             }
     
             &:active,
             &:focus {
-                color:  #0c0;
+                color:  #fff;
             }
         }
 
@@ -78,10 +78,7 @@
                 
               }
         }
-        
-        .quote-sub-form-section{
-            margin-top: -40px;
-        }
+
 
         .site-header {
            
@@ -99,6 +96,16 @@
                   
                 }
               }
+              
+            }
+          }
+          .quote-sub-form-section{
+           
+            margin-top: 20px;
+
+
+            @include desktop{
+                margin-top: -38px;
               
             }
           }
