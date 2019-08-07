@@ -1,5 +1,12 @@
 jQuery(document).ready(() => {
 
+  const goBack = () => {
+    window.location = window.location;
+  };
+
+
+  window.addEventListener('popstate', goBack);
+
 
   jQuery('#another').on('click', function (event) {
     event.preventDefault();

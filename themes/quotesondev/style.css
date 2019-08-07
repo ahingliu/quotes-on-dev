@@ -757,11 +757,8 @@ body {
     .site-footer .footer-navigation ul li {
       border-right: 1px solid #fff; } }
 
-.page-id-210 .entry-title a {
-  display: none; }
-
-.page-id-210 .entry-header {
-  display: none; }
+.page-id-210 .entry-content p {
+  font-size: 1rem; }
 
 .page-id-212 .authors ul,
 .page-id-212 .categories ul,
@@ -875,9 +872,6 @@ body {
     .page-id-214 #submit {
       width: 28%; } }
 
-.page-id-214 .quote-sub-form-section {
-  margin-top: -40px; }
-
 @media (min-width: 620px) {
   .page-id-214 .site-header .logo img {
     margin-left: 10px; } }
@@ -890,7 +884,4 @@ body {
   margin-top: 20px; }
   @media (min-width: 1080px) {
     .page-id-214 .quote-sub-form-section {
-      margin-top: -38px;
-      /* text-align: center;
-                margin-top: 0px;
-                margin-left: -14px; */ } }
+      margin-top: -38px; } }
